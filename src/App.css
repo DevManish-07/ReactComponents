@@ -32,8 +32,7 @@
 .footer {
   grid-area: footer;
   height: var(--footer-height);
-  background-color: #fff;
-  border-top: 1px solid #999;
+  border-top: 1px solid rgb(255, 255, 255);
 }
 
 .wrapper {
@@ -70,6 +69,9 @@
   }
 }
 
-.header {
-  background-color: #999;
+.header,footer {
+  background-color: #4d5158;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-weight: 500;
 }

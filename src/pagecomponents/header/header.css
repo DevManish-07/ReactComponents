@@ -1,0 +1,31 @@
+header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .main-title {
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+header .main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header .main-menu li {
+  padding: 5px 10px;
+  min-width: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+
+header .main-menu li:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
