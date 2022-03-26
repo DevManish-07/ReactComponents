@@ -1,1 +1,77 @@
-/* TODO: Add styles for sidebar */
+.nav-section-title {
+  background-color: aliceblue;
+  padding: 10px;
+  font-size: 20px;
+}
+
+ul.sidebar-menu {
+  margin: 0;
+  padding: 0;
+  max-width: 400px;
+  list-style: none;
+  list-style-type: none;
+}
+
+.sidebar-menu li a span {
+  margin-right: 20px;
+  color: #fff;
+}
+
+.sidebar-menu li a {
+  background-color: #4d5158;
+  padding: 20px 25px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #52565d;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.have-children ~ ul {
+  padding: 0px;
+  max-width: 500px;
+}
+
+.have-children ~ ul li a {
+  background-color: #3c3636;
+  padding-left: 62px;
+}
+
+.have-children ~ ul li:hover {
+  color: #fff;
+  background-color: #52565d;
+}
+
+.have-children,
+li {
+  position: relative;
+}
+
+.have-children span::after {
+  position: absolute;
+  right: 30px;
+  content: "\f054";
+  color: #fff;
+  bottom: 24px;
+  transition: all 0.25s ease-out;
+}
+
+.active.have-children span::after {
+  transform: rotate(90deg);
+}
+
+.have-children ~ .sidebar-subnav {
+  max-height: 0;
+  transition: all 0.45s ease;
+  opacity: 0;
+}
+
+.active.have-children ~ .sidebar-subnav {
+  max-height: 500px;
+  opacity: 1;
+}

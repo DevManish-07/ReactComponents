@@ -5,15 +5,15 @@ import { Footer } from "./pagecomponents/footer/footer";
 
 function App() {
   return (
-    <div class="wrapper">
-      <div class="header">
+    <div className="wrapper">
+      <div className="header">
         <Header />
       </div>
-      <div class="sidebar">
+      <div className="sidebar">
         <Sidebar />
       </div>
-      <div class="content">content</div>
-      <div class="footer">
+      <div className="content">content</div>
+      <div className="footer">
         <Footer />
       </div>
     </div>
