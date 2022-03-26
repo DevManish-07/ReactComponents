@@ -12,7 +12,7 @@ body {
 .sidebar {
   grid-area: sidebar;
   height: var(--main-content-height);
-  background-color: #444;
+  border-right: 1px solid black;
 }
 
 .content {
@@ -23,6 +23,7 @@ body {
 .header {
   grid-area: header;
   height: var(--header-height);
+  border-right: 1px solid black;
 }
 
 .footer {
