@@ -1,8 +1,13 @@
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <section>Hello world</section>
+    <div class="wrapper">
+      <div class="header"></div>
+      <div class="sidebar"></div>
+      <div class="content"></div>
+      <div class="footer"></div>
+    </div>
   );
 }
 
