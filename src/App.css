@@ -21,6 +21,9 @@
 .content {
   grid-area: content;
   height: var(--main-content-height);
+  background-color: rgb(231, 243, 243);
+  padding: 40px;
+  overflow-y: auto;
 }
 
 .header {
