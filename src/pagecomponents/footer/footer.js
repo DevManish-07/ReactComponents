@@ -1,3 +1,9 @@
+import "./footer.css";
+
 export const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <p class="copyright">No copyright © 2022</p>
+    </footer>
+  );
 };

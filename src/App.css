@@ -4,7 +4,7 @@
   --footer-height: 5vh;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,6 +32,8 @@ body {
 .footer {
   grid-area: footer;
   height: var(--footer-height);
+  background-color: #fff;
+  border-top: 1px solid #999;
 }
 
 .wrapper {
@@ -68,7 +70,6 @@ body {
   }
 }
 
-.header,
-.footer {
+.header {
   background-color: #999;
 }
