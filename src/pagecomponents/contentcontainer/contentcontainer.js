@@ -1,11 +1,11 @@
 // import {Accordian} from "./index";
 import { Accordion } from "../../components/accordion/accordion";
+import { Route, Link, NavLink, Routes } from "react-router-dom";
 
 export const Contentcontainer = () => {
   return (
-    <>
-      <Accordion />
-      <Accordion />
-    </>
+    <Routes>
+      <Route path="/accordion" element={<Accordion></Accordion>} />
+    </Routes>
   );
 };
