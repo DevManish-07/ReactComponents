@@ -12,12 +12,12 @@ ul.sidebar-menu {
   list-style-type: none;
 }
 
-.sidebar-menu li a span {
+.sidebar-menu li .link span {
   margin-right: 20px;
   color: #fff;
 }
 
-.sidebar-menu li a {
+.sidebar-menu li .link {
   background-color: #4d5158;
   padding: 20px 25px;
   display: block;
@@ -25,7 +25,7 @@ ul.sidebar-menu {
   color: #fff;
 }
 
-.sidebar-menu li a:hover {
+.sidebar-menu li .link:hover {
   background-color: #52565d;
   display: block;
   text-decoration: none;
@@ -37,7 +37,7 @@ ul.sidebar-menu {
   max-width: 500px;
 }
 
-.have-children ~ ul li a {
+.have-children ~ ul li .link {
   background-color: #3c3636;
   padding-left: 62px;
 }

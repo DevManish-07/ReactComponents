@@ -1,20 +1,10 @@
 import "./side_bar.css";
+import { Link } from "react-router-dom";
 
 const SIDEBAR_CONTENT = [
   {
-    name: "Components",
-    sublist: ["Add Exhibition", "View Exhibitions"],
-  },
-  {
-    name: "Exhibitions",
-    sublist: ["Add Exhibition", "View Exhibitions"],
-  },
-  {
-    name: "Messages",
-    sublist: ["Add Messages", "View Messages"],
-  },
-  {
-    name: "Configuration",
+    name: "Accordion",
+    sublist: [{ name: "Basic", link: "/accordion/basic" }],
   },
 ];
 
@@ -34,14 +24,20 @@ export const Sidebar = () => {
         if (!!item.sublist) {
           return (
             <li>
-              <a href="#" className="have-children" onClick={handleClick}>
+              <div
+                to="/accordion"
+                className="have-children link"
+                onClick={handleClick}
+              >
                 <span class="fa"></span>
                 {item.name}
-              </a>
+              </div>
               <ul className="sidebar-subnav">
                 {item.sublist.map((item_) => (
                   <li>
-                    <a href="#">{item_}</a>
+                    <Link to={item_.link} className="link">
+                      {item_.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -50,7 +46,9 @@ export const Sidebar = () => {
         } else {
           return (
             <li key={item.name + Math.random()}>
-              <a href="#">{item.name}</a>
+              <Link to="/accordion" className="link">
+                {item.name}
+              </Link>
             </li>
           );
         }

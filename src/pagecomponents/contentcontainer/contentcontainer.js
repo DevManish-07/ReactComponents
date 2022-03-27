@@ -5,7 +5,7 @@ import { Route, Link, NavLink, Routes } from "react-router-dom";
 export const Contentcontainer = () => {
   return (
     <Routes>
-      <Route path="/accordion" element={<Accordion></Accordion>} />
+      <Route path="/accordion/basic" element={<Accordion></Accordion>} />
     </Routes>
   );
 };
